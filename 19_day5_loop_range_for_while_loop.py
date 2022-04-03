@@ -72,7 +72,15 @@
 
 # example:
 
-x = 1 
-while x<= 10:
-    print(x)
-    x = x+1
+# x = 1 
+# while x<= 10:
+#     print(x)
+#     x = x+1
+
+# name =''
+# while name!='dhiraj':
+#     name = input("Enter Name:")
+# print("Thank You Sir")
+
+
+# nested loop
