@@ -19,7 +19,7 @@
 # average_height = round(total_height / number_of_students)
 # print(f"the average height is : {average_height}")
 
-student_heights = input("input a list of student heights :").split()
+# student_heights = input("input a list of student heights :").split()
 # for n in range(0, len(student_heights)):
 #     student_heights[n] = int(student_heights[n])
 # print(f"The height of student is: {student_heights}")
@@ -33,3 +33,46 @@ student_heights = input("input a list of student heights :").split()
 # print(number_of_students)
 # average_height = round (total_height / number_of_students)
 # print(f"The average height is : {average_height}")
+
+
+
+# for loop always needs sequence here sequence means 
+# list string dictonary, tuples,
+# sequence is also called a collection of items 
+  
+# syntax:
+# for x in sequence :   // sequence means it can be list, dictonary or any other items
+#     body.......
+
+# for eg:
+# s = 'rajnishadhikari'
+# for x in s:
+#     print(x)
+
+# same example to print character with index:
+# s = 'rajnishadhikari'
+# i = 0
+# for x in s:
+#     print(f"The character {x} is in index {i}")
+#     i = i+1
+
+
+# for x in range(10):
+#     print(x)
+
+
+
+
+# while loop:
+# we use while loop until and unless the given condition is true
+
+# SyntaxError
+# while condition:
+#     statement
+
+# example:
+
+x = 1 
+while x<= 10:
+    print(x)
+    x = x+1
