@@ -83,4 +83,56 @@
 # print("Thank You Sir")
 
 
+# infinite for loop
+# while True:
+#     print("this condition is ghumeko ghumai")
+
+
 # nested loop
+# for i in range(4):
+#     for j in range(4):
+#         print('i=',i,"j=",j)
+
+
+# program to implement right angeled triangle
+# n = int(input("Enter number of rows"))
+# for i in range(1,n+1):
+#     print('*'*i)
+
+# for loop with range function
+# for number in range(1,10):
+#     print(number)
+
+
+# # program to find the sum of number between 1 to 100
+# total = 0
+# for number in range(1, 101):
+#     total = total + number
+# print(f"The total sum between 1 and 100 is {total}")
+
+# program to add the even numbers between 1 and 100
+total = 0 
+for number in range(2,101,2):
+    total = total + number
+print(total)
+
+total2 = 0
+for number in range(1,101):
+    if number % 2 == 0:
+        total2 = total2 + number
+print(total2)
+
+    
+
+# finding out highest score that is obtained by student 
+# student_scores = input("Enter the score of the class:").split()
+# for n in range(0, len(student_scores)):
+#     student_scores[n] = int(student_scores[n])
+# print(student_scores)
+# highest_score = 0
+# for score in student_scores:
+#     if score > highest_score:
+#         highest_score = score
+# print(f"The highest score in the class is :{highest_score}")
+
+
