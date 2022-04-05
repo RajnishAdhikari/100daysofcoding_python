@@ -111,18 +111,18 @@
 # print(f"The total sum between 1 and 100 is {total}")
 
 # program to add the even numbers between 1 and 100
-total = 0 
-for number in range(2,101,2):
-    total = total + number
-print(total)
+# total = 0 
+# for number in range(2,101,2):
+#     total = total + number
+# print(total)
 
-total2 = 0
-for number in range(1,101):
-    if number % 2 == 0:
-        total2 = total2 + number
-print(total2)
+# another way to add the even numbers between 1 and 100
+# total2 = 0
+# for number in range(1,101):
+#     if number % 2 == 0:
+#         total2 = total2 + number
+# print(total2)
 
-    
 
 # finding out highest score that is obtained by student 
 # student_scores = input("Enter the score of the class:").split()
@@ -134,5 +134,72 @@ print(total2)
 #     if score > highest_score:
 #         highest_score = score
 # print(f"The highest score in the class is :{highest_score}")
+
+
+# program  that automatically prints the solution to the Fizz Buzz Game 
+# for number in range(1, 101):
+#     if number % 3 == 0 and number % 5 == 0:
+#         print("FizzBuzz")
+#     elif number % 5 == 0:
+#         print("Buzz")
+#     elif number % 3 == 0:
+#         print("Fizz")
+#     else:
+#         print(number)
+
+
+# Day 5 -- Create a Password Generator 
+import random
+letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y',
+            'z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X',
+            'Y','Z' ]
+numbers = ['0','1','2','3','4','5','6','7','8','9']
+symbols = ['!','@','#','$','%','&','(',')','*','+']
+print("Welcome to the PyPython Generator!")
+nr_letters = int(input("How many letters would you like in your password?\n"))
+nr_symbols = int(input("How many symbols would you like?\n"))
+
+nr_numbers = int(input("How many numbers would you like?\n"))
+# Easy Level 
+# password = ""
+# for char in range(1,nr_letters + 1):
+#     random_char = random.choice(letters)
+#     password = password + random_char
+    
+# for char in range(1,nr_symbols + 1):
+#     random_char = random.choice(symbols)
+#     password = password + random_char
+
+# for char in range(1,nr_numbers + 1):
+#     random_char = random.choice(numbers)
+#     password = password + random_char
+
+# print(password)
+
+
+
+
+#Hard Level -----random letters, numbers and symbols
+password_list = []
+for char in range(1,nr_letters + 1):
+    password_list.append(random.choice(letters))
+    
+    
+for char in range(1,nr_symbols + 1):
+    password_list.append(random.choice(symbols))
+
+for char in range(1,nr_numbers + 1):
+    password_list.append(random.choice(numbers))
+
+print(password_list)
+random.shuffle(password_list)
+print(password_list)
+
+password = ""
+for char in password_list:
+    password = password + char
+
+print(f"Your password is {password}")
+
 
 
