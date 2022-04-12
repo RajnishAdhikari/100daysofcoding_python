@@ -151,4 +151,67 @@
 # print(n)
 
   
-# 4. variable length argument 
+# 4. variable length argument (args or kwargs)
+# when we need to pass variable number of argument to our function then we use variable length argument 
+# we can declare variable length argument by using variable length argument 
+# def f1(*n):  or def f1(*args):
+
+# def f1(*args):
+#     pass
+# f1(10)
+
+
+# def sum(*n):
+#     total = 0
+#     for n1 in n:
+#         total = total + n1
+#     print('the sum is ',total)
+# sum(10,20)
+# sum(10,20,30,50,60,70,80)
+
+# wap to implenent variable length and positional argument 
+# def f1(n1,*n):
+#     print(n1)
+#     for n in n:
+#         print(n)
+# f1(10,20,30)
+
+# def f1(n1,*n,n2):
+#     print(n1)
+#     for n in n:
+#         print(n)
+#     print(n2)
+# f1(10,20,30,'a',n2='b')  #if we want to give any argument after variable length argument then the argumrnt can 
+# be only variable length argurment 
+
+
+# def f1(n1,*n,n2):
+#     print(n1)
+#     print(n)   if we just want in tuples 
+#     print(n2)
+# f1(10,20,30,'a',n2='b')  
+
+# kwargs - it is also known as variable length keyword argument 
+# we use 2(astrik) **  for kwargs 
+# def f1(**n):
+#     print(n)
+
+# f1(a = 20, b = 30) #this is in the form of dictonary 
+
+
+# def display(**kwargs):
+#     for k,v in kwargs.items():
+#         print(k,v)
+# display(n1 = 20, n2 = 10)
+# display(name = 'python programming')
+
+
+# Types of variables in function 
+# 1.Global Variable 
+# 2.Local Variable 
+
+
+
+# 1.Global Variables
+# Those type of variables which are declared outside of the function is known as global variable 
+# we can access these type of variable from anywhere 
