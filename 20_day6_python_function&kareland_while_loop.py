@@ -295,14 +295,153 @@
 # print(factorial(4))
 
 
-def factorial(n):
-    if n == 0:
-        result = 1
-    else:
-        result = n*factorial(n-1)
-    return result 
-print(factorial(5))
-print(factorial(4))
+# def factorial(n):
+#     if n == 0:
+#         result = 1
+#     else:
+#         result = n*factorial(n-1)
+#     return result 
+# print(factorial(5))
+# print(factorial(4))
+
+
+# Annonymous Function or Lambda Function 
+# sometimes we need to declare function without any name, such type of  nameless function is called
+# anonymous function or Lambda Function 
+# The purpose of lambda function is just for instance use 
+# we don't need to write the return function in the anonymous function 
+# syntax 
+# lambda argument_list:expression 
+# advantage of lambda function is 
+# we can write consise code so that readability of program is increased 
+# program to find square root using the lambda function 
+# s = lambda n:n*n
+# print('The square root of 4 is',s(4))
+# print('The square root of 16 is',s(16))
+# print('The square root of 17 is',s(17))
+
+# # if we need to find the square root in range 
+# s = lambda n:n*n
+# for i in range(14,20):
+#     print('The squar root of {} is : {}'.format(i,s(i))) #s(i) means passing the argument 
+
+
+# program to find sum of two numbers using lambda function 
+# s = lambda a,b: a+b 
+# print('Addition of two number is',s(10,20))
+
+# finding largest number between 2 numbers using lambda function 
+# s = lambda a,b: a if a>b else b
+# print('The biggest number is', s(10,20))
+# print('The biggest Number is', s(200,1000))
+
+# finding largest number between 3 numbers using lambda function  
+# s = lambda a,b,c: a if a>b and a>c else b if b>c  else c
+# print('The biggest number is', s(10,20,15))
+# print('The biggest Number is', s(200,1000,2500))
+
+# filter(function,sequence)
+# map(function, sequence)
+# reduce(function,sequence)
+
+
+# FILTER FUNCTION 
+# suppose if we need odd or even number form the list of data then we can use filter function  
+# program to find even number form the list 
+# l = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+# def even(n):
+#     if n%2==0:
+#         return True 
+#     else:
+#         return False
+
+# l1 = []
+# for n in l:
+#     if even(n) == True:
+#         l1.append(n)
+# print(l1)
+# for x in l1:
+#     print(x)
+
+
+# def even(x):
+#     if x%2 == 0:
+#         return True 
+#     else:
+#         return False
+# l = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+# l1 = list(filter(even,l))
+# print(l1)
+
+
+# l = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+# l1 = list(filter(lambda x:x%2 == 0,l))
+# l2 = list(filter(lambda x:x%2!= 0,l))
+# l3 = list(filter(lambda x:x%2!= 0 and x%3 == 0,l))
+# print(l1)
+# print(l2)
+# print(l3)
+
+
+# program to print name of girls whose name starts with s form the given list 
+# girls = ['radha','sumina','nitu','sarmila','asmita','sunita']
+# startswiths = list(filter(lambda name:name[0] == 's', girls))
+# print(startswiths)
+
+
+# Map function 
+# for every elemen given in the given sequence, apply some 
+# functionality and generate new elements with required modification.
+# for this requirement we use map()
+# e.g. 
+# l = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+# def double(x):
+#     return 2*x
+# l1=list((map(double,l)))
+# print(l1)
+
+# using lambda function in map function 
+# l = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+# l1 = list(map(lambda x:2*x,l))
+# print(l1)
+
+#program to print 2 list using lambda functio in map function
+# l1 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+# l2 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+# l3 = list(map(lambda x,y:x+y,l1,l2))
+# print(l3)
+
+
+# REDUCE FUNCTION 
+# THIS FUNCTION REDUCES sequence of elements into a single element by
+# applying certain condition  
+# syntax 
+# reduce(function,sequence)
+# eg 
+
+# from functools import reduce 
+# l = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+# result = reduce(lambda x,y:x+y,l)
+# print(result)
+
+
+
+# function aliasing 
+# here we can call one function with another name in the same function 
+# giving another name to the function 
+# def wish(name):
+#     print('Good morning ', name)
+# greeting = wish
+# greeting("ram")
+# wish('Ramens')
+
+
+
+
+
+
+
+
 
 
 
