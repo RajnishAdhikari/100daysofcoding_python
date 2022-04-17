@@ -215,3 +215,103 @@
 # 1.Global Variables
 # Those type of variables which are declared outside of the function is known as global variable 
 # we can access these type of variable from anywhere 
+# eg: 
+# a = 10 #global variable
+# def f1():
+#     print(a)
+# def f2():
+#     print(a)
+# f1()
+# f1()
+# f2()
+# print(a)
+
+# 2. Local Variables 
+# These are declared outside of the function and called as local variables 
+# Local variables can only be accessed form those function, in which local variables are declared 
+# e.g 
+# def f1():
+#     a=10
+#     print(a)
+# f1()
+# f1()
+
+# a = 20     #this is global variable 
+# def f1():
+#     a=10 #this is local variable 
+#     print(a)
+# def f2():
+#     print(a)
+# f1()
+# f2()
+
+
+# if we want to access any variable form any function then it is possible with global keyword 
+# the function of global keyword is to declare global variable inside the function 
+# to make variable available in all function so that required modifications can be done 
+# eg 
+# a = 10
+# def f1():
+#     a = 800
+#     print(a)
+
+# def f2():
+#     print(a)
+# f1()
+# f2()
+
+# to access this local variable as the global keyword is used 
+# a = 10
+# def f1():
+#     global a   #here global value is a =10 after global keyword value is override to 800
+#     a = 800
+#     print(a)
+
+# def f2():
+#     print(a)
+# f1()
+# f2()
+
+
+# another method to call global variable inside local variable 
+# a = 80
+# def f1():
+#     a = 800
+#     print(a)
+#     print(globals().get('a'))
+# f1()
+
+
+# RECURSIVE FUNCTION 
+# the function that calls itself is called recursive function 
+# eg 
+# def factorial(n):
+#     result = 1 
+#     while n>=1:
+#         result = result*n
+#         n = n-1
+#     return result 
+
+# print(factorial(4))
+
+
+def factorial(n):
+    if n == 0:
+        result = 1
+    else:
+        result = n*factorial(n-1)
+    return result 
+print(factorial(5))
+print(factorial(4))
+
+
+
+
+
+
+
+
+
+
+
+
