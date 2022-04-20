@@ -435,6 +435,11 @@
 # greeting("ram")
 # wish('Ramens')
 
+# while loop concept explained easily 
+# while something_is_true
+#     Do something repeatedly 
+
+
 
 
 
