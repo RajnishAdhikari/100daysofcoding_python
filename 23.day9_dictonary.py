@@ -37,8 +37,107 @@
 
 
 # ACCESSING THE ELEMENTS OF DICTONARY WITH ASSOCIATED KEY
-d = {300: 'ram', 400: 'shyam',100:'AAAAAAAAA', 200:'BBBBBB'}
+# d = {300: 'ram', 400: 'shyam',100:'AAAAAAAAA', 200:'BBBBBB'}
+# print(d)
+# print(d[100])
+
+
+#update dictonary
+# d = {300: 'ram', 400: 'shyam',100:'AAAAAAAAA', 200:'BBBBBB'}
+# d[500]= 'hari'
+# print(d)
+
+#deleting the element of the dictonary
+# d = {300: 'ram', 400: 'shyam',100:'AAAAAAAAA', 200:'BBBBBB', 500:'hari'}
+# del d[200]
+# print(d)
+# d.clear()  #to delete all the elements of dictonary
+# print(d)
+# #to delete the dictonary - the empty dictonary will also be deleted 
+# del d
+# print(d)
+
+#IMPORTANT FUNCTIONS OF DICTONARY
+#1. TO CREATE THE EMPTY DICTONARY
+# d= dict()
+# # print(d)
+
+# d[100] = "ram"
+# d[200]= "shyam"
+# d[300] = "Hari"
+# d[400] = "arjun"
+# print(d)
+# print(len(d))  2. to find the length of the dictonary 
+
+# print(d.get(100)) 3. to get the value of the key associated with it 
+# print(d.get(5000, "No Key"))  4. if there is value of the key then value will be printed otherwise no key will be printed 
+
+# 5. to remove the key value pair we use pop function 
+# d.pop(100)
+# print(d)
+
+# 6.  to remove any of the item we use popitem()
+# d.popitem()
+# print(d)
+
+#7. to print all the keys in our dictonary we use keys() function
+# print(d.keys())
+# for keys in d.keys():
+#     print(keys)
+
+#8. to print all the values in our dictonary we use values() function
+# print(d.values())
+# for values in d.values():
+#     print(values)
+
+#9. to print all the keys and values in our dictonary we use items() function
+# print(d.items())
+# for key,values in d.items():
+#     print(key, "--" ,values)
+
+
+# 10. to copy dictonary we use copy() function 
+# print(d.copy()) 
+# for x in d.keys():
+#     print(x)
+
+
+#11. using set default function
+# d = {100 : "hello", 200: "world", 300: "hi"}
+# print(d.setdefault(400, "namaste"))
+# print(d)
+
+# 12. using update() function to update 
+d = {100 : "hello", 200: "world", 300: "hi"}
+x = {400 : "sabin"}
+x.update(d)
+print(x)
+
+
+#13. Dictonary Comprehension
+d = { x:x*x for x in range(10)}
 print(d)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
