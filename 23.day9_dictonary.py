@@ -108,15 +108,24 @@
 # print(d)
 
 # 12. using update() function to update 
-d = {100 : "hello", 200: "world", 300: "hi"}
-x = {400 : "sabin"}
-x.update(d)
-print(x)
+# d = {100 : "hello", 200: "world", 300: "hi"}
+# x = {400 : "sabin"}
+# x.update(d)
+# print(x)
 
 
-#13. Dictonary Comprehension
-d = { x:x*x for x in range(10)}
-print(d)
+# #13. Dictonary Comprehension
+# d = { x:x*x for x in range(10)}
+# print(d)
+
+
+# day 9 of 100 video  -- loop through a dictonary
+programming_dictonary = {"bug": "an error", "function": "a piece of code that you can call over and over again"}
+for key in programming_dictonary:
+    print(key)
+    print(programming_dictonary[key])
+
+
 
 
 
