@@ -120,14 +120,125 @@
 
 
 # day 9 of 100 video  -- loop through a dictonary
-programming_dictonary = {"bug": "an error", "function": "a piece of code that you can call over and over again"}
-for key in programming_dictonary:
-    print(key)
-    print(programming_dictonary[key])
+# programming_dictonary = {"bug": "an error", "function": "a piece of code that you can call over and over again"}
+# for key in programming_dictonary:
+#     print(key)
+#     print(programming_dictonary[key])
 
 
 
+# Grading Program
+# here for every score in number we have to convery into grade as mentioned
+# student_scores = {
+#     "Harry": 81,
+#     "Ron": 78,
+#     "Hermione": 99,
+#     "Darco": 74,
+#     "Neville": 62,
+# }
 
+# student_grade ={}
+# for student in student_scores:
+#     score = student_scores[student]
+#     if score > 90:
+#         student_grade[student] = "Outstanding"
+#     elif score > 80:
+#         student_grade[student]= "Exceeds Expectations"
+#     elif score > 70:
+#         student_grade[student] = "Acceptable"
+#     else:
+#         student_grade[student]= "Fail"
+# print(student_grade)
+
+
+
+#NESTING IN DICTONARY AND LOOP
+# NESTING
+capitals = {
+    "france": "paris",
+    "Germany": "Berlin",
+}
+
+# NESTING A LIST IN A DICTONARY
+# travel_log = {
+#     "france": ["Paris", "Lille", "Dijon"],
+#     "Germany": ["Berlin","Hamburg","Stuttgart"]
+# }
+
+# NESTING A DICTONARY IN A DICTONARY
+# travel_log = {
+#     "France": {"city_visited":["Paris","Lille", "Dijon"], "total_visits": 12},    
+#     "Germany": ["Berlin","Hamburg","Stuttgart"]
+# }
+# print(travel_log)
+
+
+# # NESTING A DICTONARY IN A List
+# travel_log = [
+#     {
+#         "country": "France", 
+#         "city_visited": ["Paris","Lille", "Dijon"], 
+#         "total_visits": 12
+#     },    
+#     {
+#     "country": "Germany",
+#     "city_visited": ["Berlin","Hamburg","Stuttgart"],
+#     "total_visits":5
+#     },
+# ]
+
+# PROGRAM TO ADD NEW COUNTRY, CITY VISITED  AND TOTAL VISITS IN THE TRAVLE LOG
+# travel_log = [
+#     {
+#         "country": "France", 
+#         "cities": ["Paris","Lille", "Dijon"], 
+#         "total_visits": 12
+#     },    
+#     {
+#     "country": "Germany",
+#     "cities": ["Berlin","Hamburg","Stuttgart"],
+#     "total_visits":5
+#     },
+# ]
+
+# def add_new_country(country, cities,total_visits):
+#     new_country = {}
+#     new_country["country"]= country,
+#     new_country["cities"] = cities,
+#     new_country["total_visits"] = total_visits
+#     travel_log.append(new_country)
+
+# add_new_country("Russia",["Moscow","Saint Petersburg"],2)
+# print(travel_log)
+
+
+# BIDDING APP SAMPLE
+from replit import clear
+from art2 import logo
+print(logo)
+
+bids = {}
+bidding_finished = False
+
+def find_highest_bidder(bidding_record):
+    highest_bid = 0
+    for bidder in bidding_record:
+        bid_amount = bidding_record(bidder)
+        if bid_amount > highest_bid:
+            highest_bid = bid_amount
+            winner = bidder
+    print(f"The winner is {winner} with a bid of ${highest_bid} ")
+
+while not bidding_finished:
+    name = input("What is your name?")
+    price = int(input("What is your bid $"))
+    bids[name] = price
+    should_continue = input("Are there any other bidders? Type 'yes' or 'no'.\n")
+    if should_continue == "no":
+        bidding_finished = True
+        find_highest_bidder(bids)
+    elif should_continue == "yes":
+        clear()
 
 
 
