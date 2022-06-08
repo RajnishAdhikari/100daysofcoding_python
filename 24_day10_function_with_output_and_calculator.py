@@ -54,5 +54,10 @@
 
 
 # Doc strings in python
+# this is basically used for documenting for the function 
 
 
+# Calculator Project using function and dictonary 
+#add
+def add (n1, n2):
+    return n1 + n2
